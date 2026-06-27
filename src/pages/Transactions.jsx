@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PageHeader from "../components/layout/PageHeader";
 
 function Transactions() {
   const [transactions, setTransactions] = useState([]);
@@ -106,16 +107,11 @@ function Transactions() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-4xl font-bold">Transactions</h1>
-
-        <button
-          onClick={() => setShowModal(true)}
-          className="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700"
-        >
-          + Add Transaction
-        </button>
-      </div>
+      <PageHeader
+        title="Transactions"
+        buttonText="+ Add Transaction"
+        onButtonClick={() => setShowModal(true)}
+      />
 
       <div className="bg-slate-900 rounded-xl border border-slate-800 p-6">
         <table className="w-full">
