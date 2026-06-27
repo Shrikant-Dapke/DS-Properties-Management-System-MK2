@@ -1,21 +1,107 @@
-<<<<<<< HEAD
-# React + Vite
+# DS Properties Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Property Management System developed to help real estate businesses manage customers, plot transactions, expenses, categories, and financial records through a modern dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Dashboard
 
-## React Compiler
+* Financial overview
+* Customer statistics
+* Income & Expense summary
+* Current balance
+* Recent transactions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Customer Management
 
-## Expanding the ESLint configuration
+* Add customers
+* Edit customer details
+* Delete customers
+* View customer list
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# DS-Properties-Management-System-MK2
-A full-stack property management system built with React, Node.js, Express, and PostgreSQL for managing customers, property transactions, expenses, categories, and business analytics.
->>>>>>> c98fede191c53859b28a4df38be01f758b67dc67
+### Transaction Management
+
+* Record income and expenses
+* Associate income with customers
+* Associate expenses with categories
+* Edit transactions
+* Delete transactions
+
+### Category Management
+
+* Add categories
+* Edit categories
+* Delete categories
+
+## Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+* React Router
+* React Icons
+
+### Backend
+
+* Node.js
+* Express.js
+* PostgreSQL
+
+## Project Structure
+
+```
+Frontend (React)
+        ↓
+REST API (Express)
+        ↓
+PostgreSQL Database
+```
+
+## Current Status
+
+### Backend
+
+* Customer CRUD
+* Transaction CRUD
+* Category CRUD
+* Dashboard API
+
+### Frontend
+
+* Dashboard
+* Customers Module
+* Transactions Module
+* Categories Module
+
+### Upcoming Features
+
+* Reports & Analytics
+* Search & Filters
+* Authentication
+* Charts
+* Toast Notifications
+* Responsive Design
+* Deployment
+
+## Installation
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+## Author
+
+Shrikant Dapke
